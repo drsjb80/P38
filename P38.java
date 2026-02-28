@@ -29,6 +29,7 @@ public class P38 {
     }
 
     public static Object call (String methodName, Object o, Object args[]) throws Throwable {
+        // Get the parameter types for the method handle lookup.
         Class<?>[] paramTypes = new Class<?>[args.length];
         for (int i = 0; i < args.length; i++) {
             paramTypes[i] = args[i].getClass();
